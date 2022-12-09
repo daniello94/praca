@@ -1,0 +1,53 @@
+%conmanDataBtn {
+    z-index: 1;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 800;
+    font-family: "Gloria Hallelujah", cursive;
+    transition: 0.8s;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    &:hover {
+        border: 2px solid white;
+        color: white;
+        opacity: 0.9;
+    }
+}
+.btn {
+    @extend %conmanDataBtn;
+    margin-left: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(253, 85, 33);
+    &:hover {
+        background-color: rgb(253, 85, 33);
+    }
+}
+.btn2 {
+    bottom: 2px;
+    right: 10px;
+    @extend %conmanDataBtn;
+    background-color: rgb(253, 85, 33);
+    color: white;
+    &:hover {
+        background-color: black;
+    }
+}
+.btn3 {
+    position: fixed;
+    bottom: 2px;
+    right: 10px;
+    @extend %conmanDataBtn;
+    background-color: black;
+    color: white;
+    &:hover {
+        background-color: rgb(253, 85, 33);
+    }
+}
+@media all and (max-width: 540px) {
+    .btn3 {
+        position: relative;
+        right: 0;
+        width: 90%;
+    }
+}

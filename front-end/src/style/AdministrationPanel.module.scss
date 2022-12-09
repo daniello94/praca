@@ -1,0 +1,15 @@
+.menuPanel {
+    width: 30%;
+}
+.windows {
+    width: 70%;
+}
+
+@media all and (max-width: 992px) {
+    .menuPanel {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+    }
+}

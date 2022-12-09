@@ -1,0 +1,26 @@
+.inputProject {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.mainItem {
+    padding: 10px;
+    font-size: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.mainLink{
+    font-size: 12px;
+    padding: 10px;
+    border: 2px solid rgb(253, 85, 33);
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: "Gloria Hallelujah", cursive;
+    transition: 0.8s;
+    font-weight: 800;
+    &:hover{
+        background-color: rgb(253, 85, 33);
+        color: white;
+        border: 2px solid black;
+    }
+}

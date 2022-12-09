@@ -1,0 +1,160 @@
+.sectionServices {
+    margin-top: 20px;
+    position: relative;
+    video {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .hederServices {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        color: rgb(117, 117, 117);
+        opacity: 0.8;
+        text-align: center;
+        .sectionServicesText {
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: center;
+            .servicesOur {
+                color: white;
+                margin: 5px;
+                background-color: black;
+                border: 3px solid rgb(253, 85, 33);
+                border-radius: 5px;
+                width: 32%;
+                height: 50%;
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    width: 80%;
+                    height: 50%;
+                }
+                p {
+                    font-size: 20px;
+                    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+                    margin: 3px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .sectionServices {
+        .hederServices {
+            height: 100%;
+            .sectionServicesText {
+                width: 100%;
+                height: 100%;
+                .servicesOur {
+                    width: 80%;
+                    height: 70%;
+                    img {
+                        width: 70%;
+                        height: 40%;
+                    }
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 992px) {
+    .sectionServices {
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+        .hederServices {
+            height: 100%;
+            opacity: 1;
+            .sectionServicesText {
+                width: 100%;
+                height: 100%;
+                .servicesOur {
+                    width: 80%;
+                    height: 68%;
+                    img {
+                        width: 70%;
+                        height: 40%;
+                    }
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 900px) {
+    .sectionServices {
+        video {
+            height: 30%;
+        }
+        .hederServices {
+            height: 100%;
+            position: static;
+            .sectionServicesText {
+                width: 100%;
+                height: 100%;
+                .servicesOur {
+                    width: 80%;
+                    height: 68%;
+                    img {
+                        width: 70%;
+                        height: 40%;
+                    }
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 620px) {
+    .sectionServices {
+        video {
+            height: 30%;
+        }
+        .hederServices {
+            height: 100%;
+            position: static;
+            display: block;
+            .sectionServicesText {
+                width: 100%;
+                height: 100%;
+                display: block;
+                .servicesOur {
+                    width: 80%;
+                    height: 68%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    img {
+                        width: 70%;
+                        height: 40%;
+                    }
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

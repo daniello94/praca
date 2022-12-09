@@ -1,0 +1,39 @@
+.aboutUsInfo {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    .aboutUsPicture {
+        width: 49%;
+        height: 50vh;
+        background-image: url("../media/picture/aboutAsPicture.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 20px;
+    }
+    .aboutUsTextInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 49%;
+        p {
+            font-size: 20px;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        }
+    }
+}
+
+@media all and(max-width:992px) {
+    .aboutUsInfo {
+        flex-direction: column;
+        .aboutUsPicture,
+        .aboutUsTextInfo {
+            width: 100%;
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+}

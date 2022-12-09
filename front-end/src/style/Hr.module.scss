@@ -1,0 +1,29 @@
+%conmanHr {
+    width: 40%;
+    height: 2px;
+    border-radius: 50%;
+    margin-top: 0;
+}
+hr {
+    width: 15%;
+    height: 1px;
+    background-color: black;
+    margin-top: 0;
+    border-radius: 50%;
+}
+.containerSecond {
+    @extend %conmanHr;
+    background-color: rgb(253, 85, 33);
+    border: 1px solid rgb(253, 85, 33);
+}
+.hr3 {
+    @extend %conmanHr;
+    background-color: black;
+    border: 1px solid black;
+}
+
+@media all and (max-width: 400px) {
+    .containerSecond {
+        width: 70%;
+    }
+}

@@ -1,0 +1,64 @@
+table {
+    border: 3px solid rgb(253, 85, 33);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 100%;
+    thead {
+        tr {
+            color: white;
+            td {
+                padding: 5px;
+                font-size: 20px;
+                font-weight: 800;
+                font-family: Georgia, "Times New Roman", Times, serif;
+                border: 2px solid rgb(253, 85, 33);
+                background-color: black;
+            }
+        }
+    }
+    tbody {
+        .stanMessage {
+            td {
+                font-weight: bold;
+                padding: 2px;
+                font-size: 15px;
+                font-family: Georgia, "Times New Roman", Times, serif;
+                border: 2px solid black;
+            }
+        }
+        tr {
+            td {
+                padding: 2px;
+                font-size: 15px;
+                font-weight: 400;
+                font-family: Georgia, "Times New Roman", Times, serif;
+                border: 2px solid black;
+                form {
+                    margin-top: 15px;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    input,
+                    textarea {
+                        margin-bottom: 15px;
+                        padding: 5px;
+                        width: 80%;
+                    }
+                    textarea {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+.questionDelate{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,178 @@
+.conception {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+    height: 60vh;
+    .textConception {
+        width: 49%;
+        margin: 25px;
+        text-align: center;
+        p {
+            margin-top: 50px;
+        }
+    }
+    .imgPhoto {
+        width: 49%;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        .image {
+            cursor: pointer;
+            top: 0;
+            background-color: black;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 70px;
+            color: white;
+            transition: 0.8s;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+.link {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    text-decoration: none;
+    border: 3px solid black;
+    background-color: rgb(253, 85, 33);
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    transition: 0.8s;
+    &:hover {
+        background-color: black;
+    }
+}
+.viveGallery {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        margin-top: 20px;
+        width: 50%;
+        height: 75%;
+        border: 3px solid rgb(253, 85, 33);
+    }
+    .position {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: center;
+        align-items: flex-end;
+        width: 102%;
+        height: 20%;
+        overflow: scroll;
+        img {
+            cursor: pointer;
+            margin: 10px;
+            width: 90px;
+            height: 85px;
+        }
+    }
+    .iconClose {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 50px;
+        color: white;
+        transition: 0.8s;
+        z-index: 20;
+        &:hover {
+            color: red;
+        }
+    }
+}
+.close {
+    display: none;
+}
+
+@media all and (max-width: 850px) {
+    .conception {
+        display: block;
+        height: auto;
+        .textConception,
+        .imgPhoto {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 800px) {
+    .viveGallery {
+        img {
+            width: 70%;
+        }
+    }
+}
+
+@media all and (max-width: 700px) {
+    .viveGallery {
+        img {
+            width: 80%;
+        }
+        .iconClose {
+            font-size: 30px;
+        }
+    }
+}
+@media all and (max-width: 570px) {
+    .viveGallery {
+        .imgPhoto {
+            display: none;
+        }
+        .position {
+            display: block;
+            height: auto;
+            overflow-y: unset;
+            img {
+                margin-left: 50px;
+                margin-right: 50px;
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+}
+@media all and (max-width: 370px) {
+    .viveGallery {
+        .position {
+            img {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+    }
+}

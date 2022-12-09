@@ -1,0 +1,73 @@
+.viveProject {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(253, 85, 33);
+    background-color: black;
+    color: white;
+    p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .photo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .vivePhoto {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid rgb(253, 85, 33);
+            margin: 5px;
+            Button{
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 10px;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+                margin: 5px;
+            }
+        }
+    }
+}
+.fromEdit {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 3px solid black;
+    form {
+        margin-top: 20px;
+        input,
+        textarea {
+            padding: 5px;
+            width: 40%;
+        }
+        textarea {
+            height: 100px;
+        }
+    }
+}
+.mainItem {
+    position: fixed;
+    top: 0;
+    text-decoration: none;
+    border: 3px solid black;
+    background-color: rgb(253, 85, 33);
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    transition: 0.8s;
+    &:hover{
+        background-color: black
+    }
+}

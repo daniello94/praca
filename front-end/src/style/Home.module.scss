@@ -1,0 +1,210 @@
+%flexBox {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.heder {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 20;
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hederTextContent {
+        position: absolute;
+        top: 0;
+        color: rgb(117, 117, 117);
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        @extend %flexBox;
+        flex-direction: column;
+        color: white;
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: "Gloria Hallelujah", cursive;
+            margin-bottom: 0;
+        }
+        p {
+            font-size: 25px;
+            font-family: "Pacifico", cursive;
+        }
+        .iconStyle {
+            font-size: 70px;
+        }
+        .hederButtonContent {
+            z-index: 1;
+        }
+        .menuPosition {
+            width: 100%;
+            z-index: 2;
+        }
+    }
+}
+%conmanInput {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    transition: 0.8s;
+    &:focus {
+        background-color: rgb(253, 85, 33);
+        opacity: 1;
+    }
+}
+.contact {
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+    width: 20%;
+    z-index: 30;
+    .formContact {
+        padding: 10px;
+        @extend %flexBox;
+        background-color: black;
+        color: white;
+        border: 2px solid rgb(253, 85, 33);
+        border-radius: 5px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        .closeContact {
+            position: absolute;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 5px;
+            top: 0;
+            right: 2px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.8s;
+            &:hover {
+                color: red;
+            }
+        }
+        .formContactSend {
+            @extend %flexBox;
+            width: 80%;
+            input {
+                @extend %conmanInput;
+            }
+            textarea {
+                @extend %conmanInput;
+                height: 100px;
+            }
+        }
+    }
+}
+.close {
+    display: none;
+}
+.address{
+    font-size: 20px;
+    font-weight: bold;
+}
+.contactFrom {
+    margin: 10px;
+    width: 70%;
+    form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        input,
+        textarea {
+            width: 70%;
+            padding: 5px;
+            margin: 5px;
+            font-size: 15px;
+        }
+        textarea{
+            height: 100px;
+        }
+    }
+}
+
+@media all and (max-width: 992px) {
+    .hederTextContent {
+        margin-top: 0;
+        text-align: center;
+        .iconStyle {
+            margin-top: 20px;
+        }
+        .hederButtonContent {
+            margin-bottom: 20px;
+        }
+    }
+    .contact {
+        position: fixed;
+        width: 89%;
+        height: 100%;
+        top: 57%;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .hederTextContent {
+        .hederButtonContent {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+    }
+}
+
+@media all and (max-width: 400px) {
+    .heder {
+        .hederTextContent {
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+.login {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 60;
+    .closeLogin {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        border: 2px solid rgb(253, 85, 33);
+        padding: 10px;
+        transition: 0.8s;
+        &:hover {
+            background-color: rgb(253, 85, 33);
+            border: 5px solid black;
+        }
+    }
+}
